@@ -37,8 +37,8 @@ Here are the different page view ranges and the corresponding monthly price tota
 
 If the visitor switches the toggle to yearly billing, a 25% discount should be applied to all prices.
 
-    - mobile view will see "-25%"
-    - tablet and up will see "25% discount"
+- Mobile view will see "-25%"
+- Tablet and up will see "25% discount"
 
 
 
