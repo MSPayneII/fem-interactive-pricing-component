@@ -1,6 +1,8 @@
 ## Welcome! 👋
 
-This challenge is both a frontend dev challenge and a hw assignment for SI 579: Building Interactive Applications
+
+
+This challenge is both a <strong>frontend dev challenge and a hw assignment for SI 579</strong>: Building Interactive Applications
 
 Interactive pricing component
 
@@ -26,6 +28,8 @@ Your users should be able to:
 
 
 ### Page view and pricing totals
+
+Js event listeners are used to update the page view ranges and price totals.
 
 Here are the different page view ranges and the corresponding monthly price totals:
 
