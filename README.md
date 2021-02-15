@@ -26,6 +26,7 @@ Your users should be able to:
 - See hover states for all interactive elements on the page
 - Use the slider and toggle to see prices for different page view numbers (details provided below)
 
+* Chrome does not support slider progress bar formatting. To see full formatting for slider bar css, view in firefox. 
 
 ### Page view and pricing totals
 
