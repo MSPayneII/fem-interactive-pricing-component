@@ -31,7 +31,7 @@ slider.addEventListener("input", () => {
             break;
         case "30":
             viewCount.textContent = "500K";
-            price.textContent = "24.00";
+            price.textContent = "$24.00";
             console.log(slider.value);
             break;
         case "40":
@@ -57,4 +57,13 @@ toggleSwitch.addEventListener("input", () => {
         // console.log('monthly billing') //testcode
         discount.style.visibility= "hidden"; //hides discount display
     }
+});
+
+
+price.addEventListener("mouseenter", () => {
+    price.style.color = "#10d5c2";
+});
+
+price.addEventListener("mouseleave", () => {
+    price.style.color = "#293356";
 });
