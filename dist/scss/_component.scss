@@ -100,17 +100,27 @@
                 }
             }
 
-            p {
+            .price-container {
+                
                 order: 2;
+
+                @include breakpoint-up(medium){
+                    display:flex;
+                    align-items: center;
+
+                }
 
                 #price {
                     font-size: $fontLg;
                     color: $textCtaBg;
+                    margin-right: 0.3rem;
         
                     @include breakpoint-up(medium){
                         font-size: $fontXlg;
                     }
                 }
+
+                
             }
 
             @include breakpoint-up(medium){

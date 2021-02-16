@@ -337,19 +337,31 @@ body {
   height: 10px;
 }
 
-.component .container .views-slider-price-flex p {
+.component .container .views-slider-price-flex .price-container {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
 }
 
-.component .container .views-slider-price-flex p #price {
+@media (min-width: 40em) {
+  .component .container .views-slider-price-flex .price-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.component .container .views-slider-price-flex .price-container #price {
   font-size: 1.875rem;
   color: #293356;
+  margin-right: 0.3rem;
 }
 
 @media (min-width: 40em) {
-  .component .container .views-slider-price-flex p #price {
+  .component .container .views-slider-price-flex .price-container #price {
     font-size: 2.375rem;
   }
 }

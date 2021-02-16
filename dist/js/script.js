@@ -51,7 +51,7 @@ toggleSwitch.addEventListener("input", () => {
     if (toggleSwitch.checked === true) {   // if the billing switch is set to yearly
         // console.log ('yearly billing') //testcode
         discount.style.visibility = "visible"; //makes discount display appear
-        discount.textContent = window.innerWidth <= 400? "-25%": "25% discount" // discount text will be "-25%" for mobile and "25% discount" for tablet screens or larger
+        discount.textContent = window.innerWidth <= 639? "-25%": "25% discount" // discount text will be "-25%" for mobile and "25% discount" for tablet screens or larger
 
     } else {   //billing switch is set to monthly
         // console.log('monthly billing') //testcode
