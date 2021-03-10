@@ -93,6 +93,21 @@ body {
     }
 }
 
+.trialBtnMessage {
+    margin: 0 auto 3rem auto;
+    color: $textCtaBg;
+    height: 3rem;
+    line-height: 1.6;
+    width: 18rem;
+    font-size: $fontMd;
+    font-weight: map-get($fontWeights,"semi-bold");
+
+
+    @include breakpoint-up(medium){
+        width: 22rem;
+    }
+}
+
 .centered {
     display: flex;
     flex-direction: column;

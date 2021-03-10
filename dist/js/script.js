@@ -3,7 +3,8 @@ const price = document.querySelector("#price");
 const discount = document.querySelector(".discount");
 const slider = document.querySelector(".slider");
 const toggleSwitch = document.querySelector(".checkbox");
-
+const trialBtnMessage = document.querySelector(".trialBtnMessage");
+const trialBtn = document.querySelector(".button");
 
 //Defaults for slider and text
 slider.value = 0;
@@ -11,6 +12,7 @@ viewCount.textContent = "10K";
 price.textContent = "$8.00";
 toggleSwitch.checked = false;
 discount.style.visibility = "hidden";
+let trialbtnClickCount = 0;
 
 slider.addEventListener("input", () => {
     switch (slider.value) {
@@ -58,6 +60,20 @@ toggleSwitch.addEventListener("input", () => {
         discount.style.visibility= "hidden"; //hides discount display
     }
 });
+
+trialBtn.addEventListener("click", ()=> {
+    trialbtnClickCount++;
+    console.log(trialbtnClickCount);
+    const newDisplayMessage = document.createElement("p");
+    
+    if (trialbtnClickCount  === 1) {
+        newDisplayMessage.setAttribute('style', 'white-space: pre;');
+        newDisplayMessage.textContent = "Thank you! \r\n Check your email for your trial information";
+        trialBtnMessage.append(newDisplayMessage);
+    }
+
+    //will eventually add new code to replace the existing element with new text
+})
 
 
 price.addEventListener("mouseenter", () => {
